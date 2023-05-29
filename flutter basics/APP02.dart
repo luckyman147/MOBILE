@@ -141,6 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: Container(
+        height: double.infinity,
         // width: double.infinity,
         color: b,
         // child: Row(
@@ -156,6 +157,19 @@ class _MyHomePageState extends State<MyHomePage> {
         //         style: TextStyle(fontSize: 20, color: w),
         //       )
         //     ]),
+        child: Row(
+          children: [
+            Image.network(
+              "http://2.bp.blogspot.com/-U729MQSyY7I/U6G_2V5jCoI/AAAAAAAAF54/Po-noQVlNHI/s1600/the+mess.jpeg",
+              fit: BoxFit.cover,
+            ),
+            Image.asset(
+              "assets/images/A.jpg",
+              fit: BoxFit.fill,
+              height: 400,
+            )
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
